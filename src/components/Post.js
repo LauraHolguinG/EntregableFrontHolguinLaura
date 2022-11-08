@@ -23,7 +23,7 @@ export default function Post({post, name, aumentarL}) {
     <div className='posteo'>
       <h3>{post.titulo}</h3>
       <p>{post.texto}</p>
-      <button name={post.titulo} onClick={likeHandler}>👍</button>
+      <button onClick={likeHandler}>👍</button>
       <h5>Likes: {likesPost < 10 ? likesPost : <span>Mas de 10 likes</span>} </h5>
     </div>
   )
